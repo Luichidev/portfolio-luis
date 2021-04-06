@@ -1,4 +1,8 @@
-html,
+html {
+  --mainColor: #1453b2;
+  --secondColor: #2e2e2e;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -34,4 +38,9 @@ a {
 }
 .flex__5 {
   flex: 5;
+}
+
+.active {
+  background-color: var(--mainColor);
+  border-radius: 5px;
 }

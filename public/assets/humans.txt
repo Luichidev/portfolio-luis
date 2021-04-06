@@ -1,0 +1,22 @@
+/* luisalbertoarana.com | Portafolio personal en formato curriculums de mis habilidades . - https://luisalbertoarana.com */
+
+Desarrollador WEB | Técnico en Sistemas microinformáticos y redes
+
+/* TEAM */
+    Fundador: Luis Alberto Arana Montaño
+    Contacto: disconluis[at]gmail.com
+    Twitter: @luichidev
+    From: Barcelona - España
+
+/* THANKS */
+    https://ED-team.com
+    https://twitter.com/midudev
+
+/* SITE */
+    Last update: 21/01/2021
+    Languaje: Español
+    Standars: HTML5, CSS3, JavaScript
+    Components: Responsive Design, Google Fonts
+    Software: Visual Studio Code,React with NextJS
+
+/* http://humanstxt.org */

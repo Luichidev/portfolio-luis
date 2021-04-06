@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../Navbar";
 
 export default function Header() {
   return (
@@ -52,7 +53,9 @@ export default function Header() {
         <link rel="manifest" href="manifest.json" />
         <meta name="theme-color" content="#1976d2" />
       </Head>
-      <header>Header</header>
+      <header>
+        <Navbar />
+      </header>
       <style jsx>{``}</style>
     </>
   );
