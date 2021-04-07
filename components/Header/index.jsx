@@ -56,7 +56,12 @@ export default function Header() {
       <header>
         <Navbar />
       </header>
-      <style jsx>{``}</style>
+      <style jsx>{`
+        header {
+          padding: 10px 0;
+          background-color: var(--secondColor);
+        }
+        `}</style>
     </>
   );
 }

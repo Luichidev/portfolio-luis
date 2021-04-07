@@ -1,36 +1,27 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Menu from "../../components/Icons/Menu";
-import { useRef } from "react";
+import { useRef } from 'react'
 
 export default function Navbar() {
   const router = useRouter();
-  let refMenu = useRef(),
-    refMenuBtn = useRef();
+  const btnRef = useRef();
+  
 
-  const handleToggleMenu = (e) => {
-    refMenu.current.classList.toggle("show");
-    console.log(refMenu);
-  };
+  const handleOpenMenu = () => btnRef.current.classList.toggle('show');
 
   return (
     <>
-      <div id="menu" className="flex__container">
-        <nav className="flex__4">
-          <span
-            className="menu__icon"
-            id="menu-btn"
-            ref={refMenuBtn}
-            onClick={handleToggleMenu}
-          >
-            <Menu stroke="#00a551"></Menu>
-          </span>
-          <ul id="menu" ref={refMenu}>
-            <img
-              className="logo"
-              src="assets/img/logoluis.png"
-              alt="Logo del portfolio web Luis"
-            />
+      <nav>
+        <div className="flex__container">
+          <div className="logo flex__2">
+            <img src="/assets/img/logoluis.png" alt="Logo porfolio Luis"/>
+          </div>
+          <div id="burger-icon" onClick={handleOpenMenu}>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul ref={btnRef} className="flex__4">
             <li className={router.pathname == "/" ? "active" : ""}>
               <Link href="/">
                 <a>Inicio</a>
@@ -52,26 +43,20 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-
-          <div className="social">
-            <ul className="social__icon flex__container">
-              <li>
-                <a href="https://twitter.com/@luichidev">Twwiter</a>
-              </li>
-              <li>
-                <a href="https://instagram.com/luichidev">Instagram</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
       <style jsx>{`
         .show {
           height: 210px;
         }
 
-        a {
-          text-decoration: none;
+        nav {
+          width: 100%;
+          position: sticky;
+          top: 0;
+          z-index: 2000;
+          padding: 10px;
+          background-color: inherit;
         }
 
         span {
@@ -81,68 +66,76 @@ export default function Navbar() {
           border-radius: 3px;
           width: 23px;
           height: 23px;
-          background-color: var(--secondColor);
         }
 
-        #menu {
-          background-color: var(--secondColor);
-          
+        ul {
+          height: 0;
           overflow: hidden;
           left: 0;
           list-style: none;
           margin: 0;
           padding: 0;
           position: absolute;
-          top: 60px;
+          top: 80px;
           text-align: center;
           transition: height 0.3s linear;
           width: 100%;
-        }
-
-        #menu li {
-          display: block;
-          padding: 15px;
-          text-decoration: none:
-        }
-
-        #menu li:hover {
-          background-color: var(--mainColor);
-        }
-
-        nav {
-          width: 100%;
-          position: sticky;
-          top: 0;
-          border-bottom: 2px solid #f1f1f1;
-          padding: 10px;
           background-color: var(--secondColor);
         }
 
-        .logo {
-          padding: 15px 0;
+        ul > li {
+          display: block;
+          padding: 15px;
+          color: #fff;
+          text-decoration: none;
+        }
+
+        ul > li:hover,
+        .select {
+          background-color: var(--mainColor);
+          border-radius: 5px;
+        }
+
+        #burger-icon {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        #burger-icon div {
+          width: 2rem;
+          height: 0.3rem;
+          background-color: #fff;
+          margin: 7px 0 0;
         }
 
         @media screen and (min-width: 480px) {
           nav {
-            background-color: rgba(0, 0, 0, 0.85);
             margin-top: 10px;
           }
         }
 
         @media screen and (min-width: 1024px) {
           nav {
-            padding: 0;
+            padding: 10px;
           }
 
           span {
             display: none;
           }
 
-          #menu {
+          ul {
             display: flex;
             height: auto;
             position: static;
             width: auto;
+          }
+
+         ul > li {
+            width: 20%;
+          }
+
+          #burger-icon {
+            display: none;
           }
         }
       `}</style>
