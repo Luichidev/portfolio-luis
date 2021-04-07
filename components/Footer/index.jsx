@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer></footer>
+      <footer>Footer</footer>
       <style jsx>{``}</style>
     </>
   );
