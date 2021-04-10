@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        <div className="flex__container">
+        <div className="flex__container container">
           <div className="logo flex__2">
             <img src="/assets/img/logoluis.png" alt="Logo porfolio Luis"/>
           </div>
@@ -131,7 +131,7 @@ export default function Navbar() {
           }
 
          ul > li {
-            width: 20%;
+            width: 200px;
           }
 
           #burger-icon {
