@@ -36,7 +36,7 @@ export default function Footer() {
         }
 
         .container {
-          background-color: #000000;
+          background-color: rgba(0, 0, 0, 0.1);
           padding: 20px 0;
         }
 

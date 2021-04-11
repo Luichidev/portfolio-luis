@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "lobster";
+  font-display: auto;
+  src: url("/assets/fonts/Lobster/Lobster-Regular.ttf");
+}
+
 html {
   --mainColor: #1453b2;
   --secondColor: #2e2e2e;
@@ -10,6 +16,15 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -17,6 +32,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
 }
 
 .flex__container {
@@ -48,4 +70,25 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.main__title {
+  font-family: "lobster", Arial, Helvetica, sans-serif;
+  text-shadow: 3px 3px 5px var(--mainColor);
+  font-size: 2.5rem;
+}
+
+.sub__title {
+  font-size: 1.1em;
+  text-shadow: 3px 3px 3px #000;
+}
+
+@media screen and (min-width: 1024px) {
+  .main__title {
+    font-size: 4rem;
+  }
+
+  .sub__title {
+    font-size: 1.5rem;
+  }
 }

@@ -50,6 +50,11 @@ export default function Navbar() {
           height: 210px;
         }
 
+
+        .logo img {
+          width: 40%;
+        }
+
         nav {
           width: 100%;
           position: sticky;
@@ -107,16 +112,11 @@ export default function Navbar() {
           background-color: #fff;
           margin: 7px 0 0;
         }
-
-        @media screen and (min-width: 480px) {
-          nav {
-            margin-top: 10px;
-          }
-        }
-
+        
         @media screen and (min-width: 1024px) {
           nav {
             padding: 10px;
+            margin-top: 0;
           }
 
           span {
@@ -132,6 +132,13 @@ export default function Navbar() {
 
          ul > li {
             width: 200px;
+            margin-right: 10px;
+          }
+
+         ul > li > a {
+            display: block;
+            width: 100%;
+            height: 100%;
           }
 
           #burger-icon {
