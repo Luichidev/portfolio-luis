@@ -71,7 +71,9 @@ export default function Home() {
                 FrontEnd Developer | Técnico en Sistemas Microinformático y
                 Redes
               </p>
-              <button onClick={handleShowModal}>Saber más...</button>
+              <button className="btn" onClick={handleShowModal}>
+                Saber más...
+              </button>
             </div>
           </div>
         </section>
@@ -114,14 +116,6 @@ export default function Home() {
           margin: 0;
           padding: 0 10px 15px;
           color: #fff;
-        }
-
-        .container__title button {
-          color: #fff;
-          background-color: var(--mainColor);
-          border: solid 1px var(--mainColor);
-          box-shadow: 2px 2px 2px #000;
-          text-transform: uppercase;
         }
 
         .card__modal {
