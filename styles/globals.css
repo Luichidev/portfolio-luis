@@ -41,6 +41,14 @@ button {
   cursor: pointer;
 }
 
+.btn {
+  color: #fff;
+  background-color: var(--mainColor);
+  border: solid 1px var(--mainColor);
+  box-shadow: 2px 2px 2px #000;
+  text-transform: uppercase;
+}
+
 .flex__container {
   display: flex;
   flex-wrap: wrap;
