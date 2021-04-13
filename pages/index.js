@@ -58,14 +58,14 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="modal__footer">
+                <div className="modal__footer text__center">
                   <button onClick={handleCloseModal}>Cerrar</button>
                 </div>
               </div>
             </div>
           </div>
           <div className="portada">
-            <div className="container__title">
+            <div className="container__title text__center">
               <h1 className="main__title">Luis Alberto</h1>
               <p className="sub__title">
                 FrontEnd Developer | Técnico en Sistemas Microinformático y
@@ -105,7 +105,6 @@ export default function Home() {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          text-align: center;
           width: 90%;
           box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2),
             0 40px 77px 0 rgba(0, 0, 0, 0.22);
@@ -187,17 +186,12 @@ export default function Home() {
           cursor: pointer;
         }
 
-        .modal__footer {
-          text-align: center;
-        }
-
         .modal__footer button {
           border: 2px solid #4285f4;
           background-color: transparent;
           color: #4285f4;
           padding: 0.84rem 2.14rem;
           margin: 10px;
-          text-align: center;
           text-transform: uppercase;
           font-size: 0.7rem;
         }
