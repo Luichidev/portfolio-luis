@@ -91,6 +91,10 @@ button {
   text-shadow: 3px 3px 3px #000;
 }
 
+.text__center {
+  text-align: center;
+}
+
 @media screen and (min-width: 1024px) {
   .main__title {
     font-size: 4rem;

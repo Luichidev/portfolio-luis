@@ -50,7 +50,6 @@ export default function Navbar() {
           height: 210px;
         }
 
-
         .logo img {
           width: 40%;
         }
@@ -81,7 +80,7 @@ export default function Navbar() {
           margin: 0;
           padding: 0;
           position: absolute;
-          top: 80px;
+          top: 50px;
           text-align: center;
           transition: height 0.3s linear;
           width: 100%;
@@ -113,6 +112,18 @@ export default function Navbar() {
           margin: 7px 0 0;
         }
         
+        @media screen and (min-width: 480px) {
+          ul {
+            top: 70px;
+          }
+        }
+
+        @media screen and (min-width: 768px) {
+          ul {
+            top: 95px;
+          }
+        }
+
         @media screen and (min-width: 1024px) {
           nav {
             padding: 10px;
