@@ -8,6 +8,7 @@ export default function Footer() {
     <>
       <footer>  
         <div className="container">
+          <h3>Puedes contactarme en cualquiera de mis redes sociales</h3>
           <div className="flex__container social-icons">
             <a href="https://www.facebook.com/luisalbertothethunder" className="flex__1" target="_blank" rel="noopener" aria-label="Facebook">
               <Facebook/>
@@ -45,6 +46,14 @@ export default function Footer() {
           margin: 0 auto;          
         }
 
+        .social-icons a {
+          margin: 5px;
+        }
+
+        .container h3 {
+          padding-bottom: 10px;
+        }
+
         .footer-info {
           margin-top: 10px;
         }
@@ -54,9 +63,6 @@ export default function Footer() {
           padding: 0;
         }
 
-        .social-icons a {
-          margin: 5px;
-        }
 
         `}</style>
     </>

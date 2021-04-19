@@ -32,11 +32,6 @@ export default function Navbar() {
                 <a>Formación</a>
               </Link>
             </li>
-            <li className={router.pathname == "/aptitudes" ? "active" : ""}>
-              <Link href="/aptitudes">
-                <a>Aptitudes</a>
-              </Link>
-            </li>
             <li className={router.pathname == "/proyectos" ? "active" : ""}>
               <Link href="/proyectos">
                 <a>Proyectos</a>
