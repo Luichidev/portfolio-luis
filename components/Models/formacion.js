@@ -1,5 +1,6 @@
 const formacion = [
   {
+    id: 1,
     title: "CONOCIMIENTOS",
     sub_title: "Tecnologías",
     image: "/assets/img/conocimiento.jpg",
@@ -14,6 +15,7 @@ const formacion = [
     ],
   },
   {
+    id: 2,
     title: "EDUCACION",
     sub_title: "Estudios Realizados",
     image: "/assets/img/educacion.jpg",
@@ -29,6 +31,7 @@ const formacion = [
     ],
   },
   {
+    id: 3,
     title: "FORMACION",
     sub_title: "Estudios Complementarios",
     image: "/assets/img/formacion.jpg",

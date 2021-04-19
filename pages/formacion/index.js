@@ -12,7 +12,7 @@ export default function Formacion() {
           <div className="flex__container container">
             {formacion.map((estudios) => {
               return (
-                <div className="card card__formacion flex__1">
+                <div className="card card__formacion flex__1" key={estudios.id}>
                   <div className="view">
                     <img src={estudios.image} alt={estudios.title} />
                   </div>
@@ -25,8 +25,8 @@ export default function Formacion() {
                   </div>
                   <div className="card-body">
                     <ul>
-                      {estudios.skill.map((ele) => {
-                        return <li>{ele}</li>;
+                      {estudios.skill.map((ele, index) => {
+                        return <li key={index}>{ele}</li>;
                       })}
                     </ul>
                   </div>
@@ -38,20 +38,6 @@ export default function Formacion() {
         </section>
       </main>
       <style jsx>{`
-        .card {
-          box-shadow: 0 2px 5px 0 rgb(0, 0, 0, 16%),
-            0 2px 10px 0 rgb(0, 0, 0, 12%);
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          word-wrap: break-word;
-          background-clip: border-box;
-          border: 1px solid rgba(0, 0, 0, 0.125);
-          border-radius: 0.25rem;
-          margin: 1.5rem 1rem;
-          max-width: 400px;
-          min-width: 300px;
-        }
         .card-header h2 {
           text-align: center;
           color: var(--mainColor);
