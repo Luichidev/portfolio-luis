@@ -27,7 +27,7 @@ const formacion = [
       "Bachillerato Homologado Generalidad de Catalunya-2014",
       "Tècnic en Sistemes microinformàtics i Xarxes - CEAC-2015",
       "Confecció i publicació de pàgines web - EMFO Mollet-2018",
-      "Dessenvolupament D'Aplicaciones Amb Tecnologia Web - Can Molins-2021",
+      "Dessenvolupament D'Aplicaciones Amb Tecnologia Web - Cal Molins-2021",
     ],
   },
   {
@@ -42,6 +42,7 @@ const formacion = [
       "Ingeniería de Aplicaciones Multimedia y juegos - Instituto ECC Barcelona",
       "Castellano nativo / Catalán B2",
       "Ingles Técnico Básico - UAGRM (Universidad Autónoma Gabriel Rene Moreno)",
+      "Técnico en prevención de riesgos laborales 30 hrs.",
     ],
   },
 ];

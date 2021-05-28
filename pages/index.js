@@ -38,19 +38,20 @@ export default function Home() {
                       Soy un apasionado de las nuevas tecnologias me considero
                       una persona paciente, detallista, trabajadora e
                       investigadora; estoy en constante práctica de las nuevas
-                      tecnologías (desarrollo Web&Hardware).
+                      tecnologías (desarrollo Web & Hardware).
                     </p>
                     <p>
                       Entre mis muchos intereses más destacados están: Las
                       nuevas herramientas en el mundo del desarrollo web, el
                       cine, la música, el baile, y el deporte en general; en mis
-                      tiempos libres me gusta ver tutoriales y videos en el
-                      campo del desarrollo web, además de esto se tocar la
-                      guitarra, ayudo en los deberes a mi hijo y salgo a correr.
+                      tiempos libres me gusta ver tutoriales y vídeos
+                      relacionados del desarrollo web, además de esto, se tocar
+                      la guitarra, he practicado TaeKwondo y ayudo en los
+                      deberes a mi hijo.
                     </p>
                     <p>
-                      Soy una persona muy curiosa y cambiaría todo lo que sé,
-                      por todo lo que no sé.
+                      Soy una persona muy curiosa y "cambiaría todo lo que sé,
+                      por todo lo que no sé".
                     </p>
                     <p>
                       <span>&#128151;</span>
@@ -71,6 +72,9 @@ export default function Home() {
                 FrontEnd Developer | Técnico en Sistemas Microinformático y
                 Redes
               </p>
+              <a href="/curriculum-Luis.pdf" download>
+                Descargar Currículum
+              </a>
               <button className="btn" onClick={handleShowModal}>
                 Saber más...
               </button>
@@ -115,6 +119,14 @@ export default function Home() {
           margin: 0;
           padding: 0 10px 15px;
           color: #fff;
+        }
+
+        .container__title a {
+          display: block;
+          margin: 0;
+          padding: 0 10px 15px;
+          color: #fff;
+          text-decoration: underline;
         }
 
         .card__modal {
