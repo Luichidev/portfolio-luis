@@ -50,8 +50,9 @@ export default function Home() {
                       deberes a mi hijo.
                     </p>
                     <p>
-                      Soy una persona muy curiosa y "cambiaría todo lo que sé,
-                      por todo lo que no sé".
+                      Soy una persona muy curiosa y autodidacta. Una frase que
+                      me ayuda seguir mejorando cada día es:
+                      <span> "El futuro es de los que sueñan".</span>
                     </p>
                     <p>
                       <span>&#128151;</span>
@@ -188,6 +189,11 @@ export default function Home() {
           padding: 0 20px;
           color: #616161;
           font-size: 0.8rem;
+        }
+
+        .modal__info span {
+          color: var(--mainColor);
+          font-weight: bold;
         }
 
         .close {
