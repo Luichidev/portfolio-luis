@@ -35,23 +35,17 @@ export default function Home() {
                   </div>
                   <div className="modal__info flex__5">
                     <p>
-                      Soy un apasionado de las nuevas tecnologias me considero
-                      una persona paciente, detallista, trabajadora e
-                      investigadora; estoy en constante práctica de las nuevas
+                      Me considero una persona paciente, detallista, curiosa y
+                      trabajadora; estoy en constante práctica de las nuevas
                       tecnologías (desarrollo Web & Hardware).
                     </p>
                     <p>
-                      Entre mis muchos intereses más destacados están: Las
-                      nuevas herramientas en el mundo del desarrollo web, el
-                      cine, la música, el baile, y el deporte en general; en mis
-                      tiempos libres me gusta ver tutoriales y vídeos
-                      relacionados del desarrollo web, además de esto, se tocar
-                      la guitarra, he practicado TaeKwondo y ayudo en los
-                      deberes a mi hijo.
+                      En mis ratos libres toco la guitarra, veo series con mi
+                      familia, cuando puedo voy al cine y ayudo a mi hijo con
+                      los deberes.
                     </p>
                     <p>
-                      Soy una persona muy curiosa y autodidacta. Una frase que
-                      me ayuda seguir mejorando cada día es:
+                      Una frase que me ayuda a seguir mejorando cada día es:
                       <span> "El futuro es de los que sueñan".</span>
                     </p>
                     <p>

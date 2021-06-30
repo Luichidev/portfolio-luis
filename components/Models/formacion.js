@@ -16,6 +16,21 @@ const formacion = [
   },
   {
     id: 2,
+    title: "FORMACION",
+    sub_title: "Estudios Complementarios",
+    image: "/assets/img/formacion.jpg",
+    icon: "💻",
+    skill: [
+      "Ofimática (Word, Excel, PowerPoint, Access)",
+      "POO (Programación Orientada a Objetos) Lenguaje JAVA",
+      "Ingeniería de Aplicaciones Multimedia y juegos - Instituto ECC Barcelona",
+      "Castellano nativo / Catalán B2",
+      "Ingles Técnico Básico - UAGRM (Universidad Autónoma Gabriel Rene Moreno)",
+      "Técnico en prevención de riesgos laborales 30 hrs.",
+    ],
+  },
+  {
+    id: 3,
     title: "EDUCACION",
     sub_title: "Estudios Realizados",
     image: "/assets/img/educacion.jpg",
@@ -28,21 +43,6 @@ const formacion = [
       "Tècnic en Sistemes microinformàtics i Xarxes - CEAC-2015",
       "Confecció i publicació de pàgines web - EMFO Mollet-2018",
       "Dessenvolupament D'Aplicaciones Amb Tecnologia Web - Cal Molins-2021",
-    ],
-  },
-  {
-    id: 3,
-    title: "FORMACION",
-    sub_title: "Estudios Complementarios",
-    image: "/assets/img/formacion.jpg",
-    icon: "💻",
-    skill: [
-      "Ofimática (Word, Excel, PowerPoint, Access)",
-      "POO (Programación Orientada a Objetos) Lenguaje JAVA",
-      "Ingeniería de Aplicaciones Multimedia y juegos - Instituto ECC Barcelona",
-      "Castellano nativo / Catalán B2",
-      "Ingles Técnico Básico - UAGRM (Universidad Autónoma Gabriel Rene Moreno)",
-      "Técnico en prevención de riesgos laborales 30 hrs.",
     ],
   },
 ];

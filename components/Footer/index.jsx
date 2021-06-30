@@ -1,4 +1,4 @@
-import Facebook from "../Icons/Facebook";
+import Linkedin from "../Icons/linkedin";
 import Twitter from "../Icons/Twitter";
 import Whatsapp from "../Icons/Whatsapp";
 import Github from "../Icons/Github";
@@ -10,22 +10,21 @@ export default function Footer() {
         <div className="container">
           <h3>Puedes contactarme en cualquiera de mis redes sociales</h3>
           <div className="flex__container social-icons">
-            {/* <a href="https://www.facebook.com/luisalbertothethunder" className="flex__1" target="_blank" rel="noopener" aria-label="Facebook">
-              <Facebook/>
-            </a> */}
-            <a href="https://api.whatsapp.com/send?phone=+34663411621" className="flex__1" target="_blank" rel="noopener" aria-label="Facebook">
+            <a href="https://www.linkedin.com/in/luichidev/" className="flex__1" target="_blank" rel="noopener" aria-label="Linkedin">
+              <Linkedin/>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+34663411621" className="flex__1" target="_blank" rel="noopener" aria-label="whatsapp">
               <Whatsapp/>
             </a>
-            <a href="https://twitter.com/@luichidev" className="flex__1" target="_blank" rel="noopener" aria-label="Facebook">
+            <a href="https://twitter.com/@luichidev" className="flex__1" target="_blank" rel="noopener" aria-label="Twitter">
               <Twitter/>
             </a>
-            <a href="https://github.com/luichidev" className="flex__1" target="_blank" rel="noopener" aria-label="Facebook">
+            <a href="https://github.com/luichidev" className="flex__1" target="_blank" rel="noopener" aria-label="Github">
               <Github/>
             </a>
           </div>
           <div className="footer-info">
-            <p>© 2021 Portfolio WEB | Luis Alberto Arana M.</p>
-            <p>designed by: @luichidev</p>
+            <p>Portfolio WEB | Luis Alberto Arana Montaño</p>
           </div>
         </div>
       </footer>
