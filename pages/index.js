@@ -67,7 +67,7 @@ export default function Home() {
                 FrontEnd Developer | Técnico en Sistemas Microinformático y
                 Redes
               </p>
-              <a href="/curriculum-Luis.pdf" download>
+              <a href="/luisalbertoarana_CV.pdf" download>
                 Descargar Currículum
               </a>
               <button className="btn" onClick={handleShowModal}>
