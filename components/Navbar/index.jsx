@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import { useRef, useState } from 'react'
 
 export default function Navbar() {
@@ -8,10 +7,9 @@ export default function Navbar() {
 		studies: false
 	}
 	const [active, setActive] = useState(LINK_SECTION)
+	const [showMenu, setShowMenu] = useState(false)
 
-	const btnRef = useRef()
-
-	const handleOpenMenu = () => btnRef.current.classList.toggle('show')
+	const handleOpenMenu = () => setShowMenu(!showMenu)
 
 	const handleClickNav = (section) => {
 		const links = {
@@ -20,6 +18,7 @@ export default function Navbar() {
 			studies: 'studies' === section.id
 		}
 		setActive(links)
+		setShowMenu(false)
 	}
 	return (
 		<>
@@ -33,7 +32,7 @@ export default function Navbar() {
 						<div></div>
 						<div></div>
 					</div>
-					<ul ref={btnRef} className='flex__4'>
+					<ul className={showMenu ? 'show flex__4' : 'flex__4'}>
 						<li className={active.home ? 'active' : ''} onClick={() => handleClickNav(home)}>
 							<a href='#home'>Inicio</a>
 						</li>

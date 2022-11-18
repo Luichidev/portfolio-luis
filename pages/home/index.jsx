@@ -1,3 +1,4 @@
+import SocialIcon from '@/components/socialIcon'
 import { useRef } from 'react'
 
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
 					<div className='container__title text__center'>
 						<h1 className='main__title'>Luis Alberto</h1>
 						<p className='sub__title'>FrontEnd Developer | Técnico en Sistemas Microinformático y Redes</p>
+						<SocialIcon />
 						<a href='/luisalbertoarana_CV.pdf' download>
 							Descargar Currículum
 						</a>
