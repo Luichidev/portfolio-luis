@@ -17,6 +17,7 @@ export default function Navbar() {
 			project: 'project' === section.id,
 			studies: 'studies' === section.id
 		}
+
 		setActive(links)
 		setShowMenu(false)
 	}
@@ -32,7 +33,7 @@ export default function Navbar() {
 						<div></div>
 						<div></div>
 					</div>
-					<ul className={showMenu ? 'show flex__4' : 'flex__4'}>
+					<ul className={'flex__4 ' + (showMenu ? 'show' : '')}>
 						<li className={active.home ? 'active' : ''} onClick={() => handleClickNav(home)}>
 							<a href='#home'>Inicio</a>
 						</li>
@@ -97,7 +98,7 @@ export default function Navbar() {
 				}
 
 				li > a {
-					display: block;	
+					display: block;
 					padding: 16px;
 				}
 
@@ -149,7 +150,6 @@ export default function Navbar() {
 
 					ul > li > a {
 						width: 100%;
-						height: 100%;
 					}
 
 					#burger-icon {
