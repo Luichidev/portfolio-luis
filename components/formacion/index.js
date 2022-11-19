@@ -58,6 +58,10 @@ export default function Formacion() {
 					padding: 5px;
 					color: #747373;
 				}
+
+				#studies {
+					scroll-margin-top: 100px;
+				}
 			`}</style>
 		</>
 	)

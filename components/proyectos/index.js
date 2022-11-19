@@ -65,6 +65,10 @@ export default function Proyectos() {
 					font-size: 1.8rem;
 				}
 
+				#project {
+					scroll-margin-top: 100px;
+				}
+
 				@media screen and (min-width: 650px) {
 					.card__container {
 						max-width: 45%;

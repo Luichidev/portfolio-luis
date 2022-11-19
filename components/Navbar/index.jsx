@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 
 export default function Navbar() {
 	const LINK_SECTION = {
@@ -47,7 +47,7 @@ export default function Navbar() {
 			</nav>
 			<style jsx>{`
 				.show {
-					height: 210px;
+					height: 160px;
 				}
 
 				.logo img {
@@ -86,7 +86,6 @@ export default function Navbar() {
 
 				ul > li {
 					display: block;
-					padding: 15px;
 					color: #fff;
 					text-decoration: none;
 				}
@@ -95,6 +94,11 @@ export default function Navbar() {
 				.select {
 					background-color: var(--mainColor);
 					border-radius: 5px;
+				}
+
+				li > a {
+					display: block;	
+					padding: 16px;
 				}
 
 				#burger-icon {
@@ -144,7 +148,6 @@ export default function Navbar() {
 					}
 
 					ul > li > a {
-						display: block;
 						width: 100%;
 						height: 100%;
 					}
