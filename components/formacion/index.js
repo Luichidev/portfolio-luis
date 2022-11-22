@@ -55,7 +55,8 @@ export default function Formacion() {
 				}
 
 				li {
-					padding: 5px;
+					padding-inline-end: 16px;
+					padding-block-end: 8px;
 					color: #747373;
 				}
 

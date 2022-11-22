@@ -1,28 +1,20 @@
 import SocialIcon from '@/components/socialIcon'
-import { useRef } from 'react'
+import { useState } from 'react'
 
 export default function Home() {
-	const modalRef = useRef()
-
-	const handleShowModal = () => {
-		modalRef.current.style.display = 'block'
-	}
-
-	const handleCloseModal = () => {
-		modalRef.current.style.display = 'none'
-	}
+	const [showModal, setShowModal] = useState(false)
 
 	return (
 		<>
 			<section id='home'>
-				<div ref={modalRef} className='card__modal'>
+				<div className={'card__modal ' + (showModal ? 'show' : 'hidden')}>
 					<div className='modal__container'>
 						<div className='modal__content'>
 							<div className='modal__header'>
 								<p>
 									Hola, soy <strong>Luis Alberto Arana Montaño</strong>
 								</p>
-								<p className='close' onClick={handleCloseModal}>
+								<p className='close' onClick={() => setShowModal(false)}>
 									X
 								</p>
 							</div>
@@ -31,11 +23,11 @@ export default function Home() {
 									<img src='/assets/img/avatar.jpg' className='avatar__img' />
 								</div>
 								<div className='modal__info flex__5'>
-									<p>Me considero una persona paciente, detallista, curiosa y trabajadora; estoy en constante práctica de las nuevas tecnologías (desarrollo Web & Hardware).</p>
-									<p>En mis ratos libres toco la guitarra, veo series con mi familia, cuando puedo voy al cine y ayudo a mi hijo con los deberes.</p>
+									<p>Mis compañeros de trabajo me describen como "Apasionado de las tecnologías".</p>
+									<p>Trabajo en equipo, empatia y resolutivo.</p>
 									<p>
 										Una frase que me ayuda a seguir mejorando cada día es:
-										<span> "El futuro es de los que sueñan".</span>
+										<span> "El futuro le pertenece a aquellos que sueñan".</span>
 									</p>
 									<p>
 										<span>&#128151;</span>
@@ -44,7 +36,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className='modal__footer text__center'>
-								<button onClick={handleCloseModal}>Cerrar</button>
+								<button onClick={() => setShowModal(false)}>Cerrar</button>
 							</div>
 						</div>
 					</div>
@@ -52,13 +44,13 @@ export default function Home() {
 				<div className='portada'>
 					<div className='container__title text__center'>
 						<h1 className='main__title'>Luis Alberto</h1>
-						<p className='sub__title'>FrontEnd Developer | Técnico en Sistemas Microinformático y Redes</p>
+						<p className='sub__title'>FrontEnd Developer Engineer</p>
 						<SocialIcon />
 						<a href='/luisalbertoarana_CV.pdf' download>
 							Descargar Currículum
 						</a>
-						<button className='btn' onClick={handleShowModal}>
-							Saber más...
+						<button className='btn' onClick={() => setShowModal(true)}>
+							Acerca de mi
 						</button>
 					</div>
 				</div>
@@ -124,6 +116,10 @@ export default function Home() {
 
 				.show {
 					display: block;
+				}
+
+				.hidden {
+					display: none;
 				}
 
 				.modal__container {

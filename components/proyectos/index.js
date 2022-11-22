@@ -11,7 +11,7 @@ export default function Proyectos() {
 							<div className='card flex__1 card__container' style={{ backgroundImage: `url("${pro.image}")` }} key={pro.id}>
 								<div className='text__center flex__container card__description'>
 									<div className='card__info'>
-										<h5 className='sub__title' style={{ color: pro.color }}>
+										<h5 className='sub__title'>
 											{pro.icon} {pro.icon_title}
 										</h5>
 										<h3>
@@ -46,7 +46,7 @@ export default function Proyectos() {
 					position: absolute;
 					top: 0;
 					left: 0;
-					background-color: rgba(0, 0, 0, 0.6);
+					background-color: rgba(0, 0, 0, 0.7);
 				}
 
 				.card__description {
