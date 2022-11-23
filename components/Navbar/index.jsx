@@ -118,6 +118,9 @@ export default function Navbar() {
 					ul {
 						top: 70px;
 					}
+					.logo img {
+						width: 30%;
+					}
 				}
 
 				@media screen and (min-width: 768px) {

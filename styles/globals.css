@@ -109,6 +109,13 @@ button {
 	min-width: 300px;
 }
 
+@media screen and (min-width: 650px) {
+	.card {
+		max-width: 45% !important;
+		min-width: 45% !important;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.main__title {
 		font-size: 4rem;

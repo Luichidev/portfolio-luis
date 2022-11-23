@@ -204,6 +204,12 @@ export default function Home() {
 					vertical-align: middle;
 				}
 
+				@media screen and (min-width: 480px) {
+					#home {
+						padding-block-start: 72px;
+					}
+				}
+
 				@media screen and (min-width: 768px) {
 					.container__title {
 						width: 70%;

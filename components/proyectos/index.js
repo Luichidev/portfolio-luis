@@ -68,13 +68,6 @@ export default function Proyectos() {
 				#project {
 					scroll-margin-top: 100px;
 				}
-
-				@media screen and (min-width: 650px) {
-					.card__container {
-						max-width: 45%;
-						min-width: 45%;
-					}
-				}
 			`}</style>
 		</>
 	)
