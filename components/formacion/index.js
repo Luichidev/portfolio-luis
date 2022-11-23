@@ -1,6 +1,14 @@
-import formacion from '@/components/Models/formacion'
+import { useEffect, useState } from 'react'
 
 export default function Formacion() {
+	const [formacion, setFormacion] = useState([])
+
+	useEffect(async () => {
+		const response = await fetch('api/formacion')
+		const { data } = await response.json()
+		setFormacion(data)
+	})
+
 	return (
 		<>
 			<section id='studies'>

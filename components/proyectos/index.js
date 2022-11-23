@@ -1,6 +1,14 @@
-import proyectos from '@/components/Models/proyectos'
+import { useEffect, useState } from 'react'
 
 export default function Proyectos() {
+	const [proyectos, setProyectos] = useState([])
+
+	useEffect(async () => {
+		const response = await fetch('api/proyectos')
+		const { data } = await response.json()
+		setProyectos(data)
+	})
+
 	return (
 		<>
 			<section id='project'>
