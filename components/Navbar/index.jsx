@@ -1,26 +1,11 @@
 import { useState } from 'react'
+import { Link } from 'react-scroll/modules'
 
 export default function Navbar() {
-	const LINK_SECTION = {
-		home: true,
-		project: false,
-		studies: false
-	}
-	const [active, setActive] = useState(LINK_SECTION)
 	const [showMenu, setShowMenu] = useState(false)
 
 	const handleOpenMenu = () => setShowMenu(!showMenu)
 
-	const handleClickNav = (section) => {
-		const links = {
-			home: 'home' === section.id,
-			project: 'project' === section.id,
-			studies: 'studies' === section.id
-		}
-
-		setActive(links)
-		setShowMenu(false)
-	}
 	return (
 		<>
 			<nav>
@@ -34,7 +19,22 @@ export default function Navbar() {
 						<div></div>
 					</div>
 					<ul className={'flex__4 ' + (showMenu ? 'show' : '')}>
-						<li className={active.home ? 'active' : ''} onClick={() => handleClickNav(home)}>
+						<li>
+							<Link className='link' activeClass='active' to='home' spy={true} smooth={true} offset={50} duration={500}>
+								Inicio
+							</Link>
+						</li>
+						<li>
+							<Link className='link' activeClass='active' to='project' spy={true} smooth={true} offset={50} duration={500}>
+								Proyectos
+							</Link>
+						</li>
+						<li>
+							<Link className='link' activeClass='active' to='studies' spy={true} smooth={true} offset={50} duration={500}>
+								Formación
+							</Link>
+						</li>
+						{/* <li className={active.home ? 'active' : ''} onClick={() => handleClickNav(home)}>
 							<a href='#home'>Inicio</a>
 						</li>
 						<li className={active.project ? 'active' : ''} onClick={() => handleClickNav(project)}>
@@ -42,7 +42,7 @@ export default function Navbar() {
 						</li>
 						<li className={active.studies ? 'active' : ''} onClick={() => handleClickNav(studies)}>
 							<a href='#studies'>Formación</a>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 			</nav>
@@ -89,17 +89,6 @@ export default function Navbar() {
 					display: block;
 					color: #fff;
 					text-decoration: none;
-				}
-
-				ul > li:hover,
-				.select {
-					background-color: var(--mainColor);
-					border-radius: 5px;
-				}
-
-				li > a {
-					display: block;
-					padding: 16px;
 				}
 
 				#burger-icon {

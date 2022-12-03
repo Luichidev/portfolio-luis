@@ -70,9 +70,18 @@ button {
 	flex: 5;
 }
 
-.active {
+.active,
+.link:hover {
 	background-color: var(--mainColor);
 	border-radius: 5px;
+}
+
+.link {
+	display: block;
+	cursor: pointer;
+	padding: 16px;
+	width: 100%;
+	height: 100%;
 }
 
 .container {
@@ -123,5 +132,10 @@ button {
 
 	.sub__title {
 		font-size: 1.5rem;
+	}
+
+	.card {
+		max-width: 30% !important;
+		min-width: 30% !important;
 	}
 }

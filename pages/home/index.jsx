@@ -240,6 +240,10 @@ export default function Home() {
 					.container__title {
 						width: 60%;
 					}
+
+					#home {
+						padding-block-start: 56px;
+					}
 				}
 			`}</style>
 		</>
