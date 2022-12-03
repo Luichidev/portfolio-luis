@@ -20,29 +20,20 @@ export default function Navbar() {
 					</div>
 					<ul className={'flex__4 ' + (showMenu ? 'show' : '')}>
 						<li>
-							<Link className='link' activeClass='active' to='home' spy={true} smooth={true} offset={50} duration={500}>
+							<Link className='link' activeClass='active' to='home' spy={true} smooth={true} offset={0} duration={500} onClick={handleOpenMenu}>
 								Inicio
 							</Link>
 						</li>
 						<li>
-							<Link className='link' activeClass='active' to='project' spy={true} smooth={true} offset={50} duration={500}>
+							<Link className='link' activeClass='active' to='project' spy={true} smooth={true} offset={-60} duration={500} onClick={handleOpenMenu}>
 								Proyectos
 							</Link>
 						</li>
 						<li>
-							<Link className='link' activeClass='active' to='studies' spy={true} smooth={true} offset={50} duration={500}>
+							<Link className='link' activeClass='active' to='studies' spy={true} smooth={true} offset={-60} duration={500} onClick={handleOpenMenu}>
 								Formación
 							</Link>
 						</li>
-						{/* <li className={active.home ? 'active' : ''} onClick={() => handleClickNav(home)}>
-							<a href='#home'>Inicio</a>
-						</li>
-						<li className={active.project ? 'active' : ''} onClick={() => handleClickNav(project)}>
-							<a href='#project'>Proyectos</a>
-						</li>
-						<li className={active.studies ? 'active' : ''} onClick={() => handleClickNav(studies)}>
-							<a href='#studies'>Formación</a>
-						</li> */}
 					</ul>
 				</div>
 			</nav>
