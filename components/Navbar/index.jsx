@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-scroll/modules'
+import Image from 'next/image'
 
 export default function Navbar() {
 	const [showMenu, setShowMenu] = useState(false)
@@ -11,7 +12,7 @@ export default function Navbar() {
 			<nav>
 				<div className='flex__container container'>
 					<div className='logo flex__2'>
-						<img src='/assets/img/logoluis.png' alt='Logo porfolio Luis' />
+						<Image src='/assets/img/logoluis.png' alt='Logo porfolio Luis' placeholder='blur' width={210} height={60} />
 					</div>
 					<div id='burger-icon' onClick={handleOpenMenu}>
 						<div></div>

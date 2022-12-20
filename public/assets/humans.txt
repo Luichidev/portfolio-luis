@@ -1,6 +1,6 @@
-/* luisalbertoarana.com | Portafolio personal en formato curriculums de mis habilidades . - https://luisalbertoarana.com */
+/* luichi.dev | Portafolio personal en formato curriculums de mis habilidades . - https://luichi.dev */
 
-Desarrollador WEB | Técnico en Sistemas microinformáticos y redes
+FrontEnd Engineer | Técnico en Sistemas microinformáticos y redes
 
 /* TEAM */
     Fundador: Luis Alberto Arana Montaño
@@ -9,11 +9,11 @@ Desarrollador WEB | Técnico en Sistemas microinformáticos y redes
     From: Barcelona - España
 
 /* THANKS */
-    https://ED-team.com
+    https://midu.dev
     https://twitter.com/midudev
 
 /* SITE */
-    Last update: 21/01/2021
+    Last update: 20/12/2022
     Languaje: Español
     Standars: HTML5, CSS3, JavaScript
     Components: Responsive Design, Google Fonts

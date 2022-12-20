@@ -42,6 +42,10 @@ button {
 	cursor: pointer;
 }
 
+section {
+	margin-block-end: 40px;
+}
+
 .btn {
 	color: #fff;
 	background-color: var(--mainColor);
