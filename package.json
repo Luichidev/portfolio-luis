@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "build-export": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "phoenix": "rm -rf ./node_modules && npm install"
   },
   "dependencies": {
     "next": "10.0.9",
