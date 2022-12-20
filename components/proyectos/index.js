@@ -7,7 +7,7 @@ export default function Proyectos() {
 		const response = await fetch('api/proyectos')
 		const { data } = await response.json()
 		setProyectos(data)
-	})
+	}, [])
 
 	return (
 		<>

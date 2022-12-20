@@ -8,7 +8,7 @@ export default function Formacion() {
 		const response = await fetch('api/formacion')
 		const { data } = await response.json()
 		setFormacion(data)
-	})
+	}, [])
 
 	return (
 		<>
