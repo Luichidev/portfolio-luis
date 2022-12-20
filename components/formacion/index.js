@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 export default function Formacion() {
 	const [formacion, setFormacion] = useState([])
@@ -18,7 +19,7 @@ export default function Formacion() {
 						return (
 							<div className='card card__formacion flex__1' key={estudios.id}>
 								<div className='view'>
-									<img src={estudios.image} alt={estudios.title} />
+									<Image alt={estudios.title} src={estudios.image} placeholder='blur' width={500} height={331} />
 								</div>
 								<div className='card-header'>
 									<h2 className='sub__title'>{estudios.title}</h2>

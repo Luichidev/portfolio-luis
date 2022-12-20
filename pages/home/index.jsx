@@ -20,7 +20,7 @@ export default function Home() {
 							</div>
 							<div className='modal__body flex__container'>
 								<div className='modal__avatar flex__1'>
-									<img src='/assets/img/avatar.jpg' className='avatar__img' />
+									<img src='/assets/img/avatar.webp' className='avatar__img' />
 								</div>
 								<div className='modal__info flex__5'>
 									<p>Mis compañeros de trabajo me describen como "Apasionado de las tecnologías".</p>
@@ -57,7 +57,7 @@ export default function Home() {
 			</section>
 			<style jsx>{`
 				.portada {
-					background: url('/assets/img/portada.jpg');
+					background: url('/assets/img/portada.webp');
 					background-repeat: no-repeat;
 					background-position: center center;
 					background-size: cover;

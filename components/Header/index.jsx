@@ -10,7 +10,7 @@ export default function Header() {
 				<meta property='og:site_type' content='website' />
 				<meta property='og:title' content='Portfolio WEB' />
 				<meta property='og:url' content='https://luisalbertoarana.com' />
-				<meta property='og:image' content='assets/img/og-image.png' />
+				<meta property='og:image' content='assets/img/og-image.webp' />
 				<meta property='og:description' content='Hola, Soy Luis Alberto, Bienvenid@s a mi portafolio WEB, aquí encontrarás información acerca de mi y mis proyectos; ¡Te invito a verla! :D' />
 				<meta name='keywords' content='portfolio, portfolio web, portfolio WEB, Portfolio, Portfolio WEB, curriculum, website, luis, luis alberto, Luis, Luis Alberto, book web' />
 				<meta name='description' content='Hola, Soy Luis Alberto, Bienvedi@s a mi portafolio WEB, aqui encontrarás información acerca de mi y mis proyectos; ¡Te invito a verla! :D' />

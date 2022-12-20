@@ -5,7 +5,7 @@ export default function handler(req, res) {
 				id: 1,
 				title: 'CONOCIMIENTOS',
 				sub_title: 'Tecnologías',
-				image: '/assets/img/conocimiento.jpg',
+				image: '/assets/img/conocimiento.webp',
 				icon: '🛠️',
 				skill: ['HTML5 / CSS3 / JavaScript / Bootstrap / Bootswatch / Font-Awesome', 'PHP / MySql / WordPress / NodeJS / Express / MongoDB / MariaDB', 'JQuery / JQueryUI / React / JSON / Vue', 'Gimp2 / Gravit Designer / MSOffice / Pencil', 'VirtualBox / VMWare', 'Windows Server 2012RT / Ubuntu / Kubuntu']
 			},
@@ -13,7 +13,7 @@ export default function handler(req, res) {
 				id: 2,
 				title: 'FORMACION',
 				sub_title: 'Estudios Complementarios',
-				image: '/assets/img/formacion.jpg',
+				image: '/assets/img/formacion.webp',
 				icon: '💻',
 				skill: [
 					'Ofimática (Word, Excel, PowerPoint, Access)',
@@ -31,7 +31,7 @@ export default function handler(req, res) {
 				id: 3,
 				title: 'EDUCACION',
 				sub_title: 'Estudios Realizados',
-				image: '/assets/img/educacion.jpg',
+				image: '/assets/img/educacion.webp',
 				icon: '🎓',
 				skill: ['Bachillerato Colegio San Juan Bosco - 1997', 'Ingeniería Informática UAGRM - 2003', 'Escuela para Adultos Catalán nivel B2-2005-2008', 'Bachillerato Homologado Generalidad de Catalunya - 2014', 'Tècnic en Sistemes microinformàtics i Xarxes - CEAC - 2015']
 			}

@@ -1,24 +1,22 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function Error404() {
-  return (
-    <>
-      <section>
-        <div className="error__404">
-          <div className="noFound__container">
-            <h2 className="main__title">404</h2>
-            <p className="sub__title">
-              ¡Lo siento!, Pero la página que buscas, no existe.
-            </p>
-            <Link href="/">
-              <button className="btn">Volver al Inicio</button>
-            </Link>
-          </div>
-        </div>
-      </section>
-      <style jsx>{`
+	return (
+		<>
+			<section>
+				<div className='error__404'>
+					<div className='noFound__container'>
+						<h2 className='main__title'>404</h2>
+						<p className='sub__title'>¡Lo siento!, Pero la página que buscas, no existe.</p>
+						<Link href='/'>
+							<button className='btn'>Volver al Inicio</button>
+						</Link>
+					</div>
+				</div>
+			</section>
+			<style jsx>{`
         .error__404 {
-          background: url("/assets/img/error404.jpg");
+          background: url("/assets/img/error404.webp");
           background-repeat: no-repeat;
           background-position: center center;
           background-size: cover;
@@ -55,6 +53,6 @@ export default function Error404() {
           text-shadow: text-shadow: 3px 3px 5px #fff;
         }
       `}</style>
-    </>
-  );
+		</>
+	)
 }
