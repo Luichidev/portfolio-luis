@@ -24,10 +24,8 @@ export default function Header() {
 				<link rel='shortcut icon' type='image/png' href='/assets/img/icon-32x32.png' />
 				<link rel='author' type='text/plain' href='assets/humans.txt' />
 				<link rel='sitemap' type='application/xml' title='Sitemap' href='/assets/sitemap.xml' />
-
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' type='image/x-icon' href='favicon.ico' />
-				<script src='https://www.google.com/recaptcha/api.js'></script>
 				<link rel='manifest' href='manifest.json' />
 			</Head>
 			<header>
