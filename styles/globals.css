@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'lobster';
-	font-display: auto;
+	font-style: normal;
+	font-display: swap;
 	src: url('/assets/fonts/Lobster/Lobster-Regular.ttf');
 }
 
@@ -81,7 +82,6 @@ button {
 	cursor: pointer;
 	padding: 16px;
 	width: 100%;
-	height: 100%;
 }
 
 .container {
