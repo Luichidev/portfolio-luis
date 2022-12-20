@@ -20,17 +20,17 @@ export default function Navbar() {
 					</div>
 					<ul className={'flex__4 ' + (showMenu ? 'show' : '')}>
 						<li>
-							<Link className='link' activeClass='active' to='home' spy={true} smooth={true} offset={0} duration={500} onClick={handleOpenMenu}>
+							<Link className='link' activeClass='active' to='home' spy={true} smooth={true} offset={-10} duration={500} onClick={handleOpenMenu}>
 								Inicio
 							</Link>
 						</li>
 						<li>
-							<Link className='link' activeClass='active' to='project' spy={true} smooth={true} offset={-60} duration={500} onClick={handleOpenMenu}>
+							<Link className='link' activeClass='active' to='project' spy={true} smooth={true} offset={-10} duration={500} onClick={handleOpenMenu}>
 								Proyectos
 							</Link>
 						</li>
 						<li>
-							<Link className='link' activeClass='active' to='studies' spy={true} smooth={true} offset={-60} duration={500} onClick={handleOpenMenu}>
+							<Link className='link' activeClass='active' to='studies' spy={true} smooth={true} offset={-10} duration={500} onClick={handleOpenMenu}>
 								Formación
 							</Link>
 						</li>
@@ -110,6 +110,10 @@ export default function Navbar() {
 				}
 
 				@media screen and (min-width: 1024px) {
+					.show {
+						height: auto;
+					}
+
 					nav {
 						padding: 10px;
 						margin-top: 0;
