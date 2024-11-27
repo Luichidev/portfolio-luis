@@ -12,7 +12,7 @@ export default function Navbar() {
 			<nav>
 				<div className='flex__container container'>
 					<div className='logo flex__2'>
-						<Image src='/assets/img/logoluis.png' alt='Logo porfolio Luis' placeholder='blur' width={210} height={60} />
+						<Image src='/assets/img/logoluis.png' alt='Logo porfolio Luis' width={210} height={60} />
 					</div>
 					<div id='burger-icon' onClick={handleOpenMenu}>
 						<div></div>

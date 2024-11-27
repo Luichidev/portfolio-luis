@@ -10,9 +10,9 @@
     "phoenix": "rm -rf ./node_modules && npm install"
   },
   "dependencies": {
-    "next": "10.0.9",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-scroll": "1.8.8"
+    "next": "15.0.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-scroll": "1.9.0"
   }
 }
